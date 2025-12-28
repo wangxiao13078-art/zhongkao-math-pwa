@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* 防止iOS点击高亮 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 安全区域适配 */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.safe-area-top {
+  padding-top: env(safe-area-inset-top, 0);
+}
+
+/* 数学公式样式调整 */
+.katex {
+  font-size: 1.1em;
+}
+
+.katex-display {
+  margin: 0.75em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 题目内容样式 */
+.question-content {
+  @apply leading-relaxed;
+}
+
+.question-content p {
+  @apply my-2;
+}
+
+/* 选项卡片样式 */
+.option-card {
+  @apply relative p-4 rounded-xl border-2 border-stone-200 bg-white transition-all duration-200;
+}
+
+.option-card:active {
+  @apply scale-[0.98];
+}
+
+.option-card.selected {
+  @apply border-primary-500 bg-primary-50;
+}
+
+.option-card.correct {
+  @apply border-success-500 bg-success-50;
+}
+
+.option-card.wrong {
+  @apply border-error-500 bg-error-50;
+}
+
+/* 底部导航栏 */
+.bottom-nav {
+  @apply fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-stone-200 safe-area-bottom;
+}
+
+.bottom-nav-item {
+  @apply flex flex-col items-center justify-center py-2 px-4 text-stone-500 transition-colors;
+}
+
+.bottom-nav-item.active {
+  @apply text-primary-600;
+}
+
+/* 卡片悬浮效果 */
+.card-hover {
+  @apply transition-all duration-200;
+}
+
+.card-hover:hover {
+  @apply shadow-soft -translate-y-0.5;
+}
+
+.card-hover:active {
+  @apply scale-[0.98] shadow-card;
+}
+
+/* 渐变背景 */
+.gradient-primary {
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+/* 动画 */
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 页面过渡 */
+.page-enter {
+  @apply opacity-0 translate-y-2;
+}
+
+.page-enter-active {
+  @apply opacity-100 translate-y-0 transition-all duration-300;
+}
+
+/* 加载骨架屏 */
+.skeleton {
+  @apply bg-stone-200 animate-pulse rounded;
+}
+
+/* iOS风格的开关 */
+.toggle-switch {
+  @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors;
+}
+
+.toggle-switch.on {
+  @apply bg-primary-500;
+}
+
+.toggle-switch.off {
+  @apply bg-stone-300;
+}
+
+.toggle-switch::after {
+  @apply absolute left-0.5 h-5 w-5 rounded-full bg-white shadow-sm transition-transform content-[''];
+}
+
+.toggle-switch.on::after {
+  @apply translate-x-5;
+}
+
+/* 难度徽章 */
+.difficulty-badge {
+  @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+}
+
+.difficulty-1 {
+  @apply bg-green-100 text-green-700;
+}
+
+.difficulty-2 {
+  @apply bg-yellow-100 text-yellow-700;
+}
+
+.difficulty-3 {
+  @apply bg-orange-100 text-orange-700;
+}
+
+.difficulty-4 {
+  @apply bg-red-100 text-red-700;
+}
+
+.difficulty-5 {
+  @apply bg-purple-100 text-purple-700;
+}
+
+/* 标签样式 */
+.tag {
+  @apply inline-flex items-center px-2.5 py-1 rounded-lg text-sm font-medium bg-stone-100 text-stone-600;
+}
+
+.tag-primary {
+  @apply bg-primary-100 text-primary-700;
+}
+
+/* 输入框样式 */
+.input {
+  @apply w-full px-4 py-3 rounded-xl border-2 border-stone-200 bg-white transition-all duration-200 outline-none;
+}
+
+.input:focus {
+  @apply border-primary-400 ring-4 ring-primary-100;
+}
+
+/* 按钮样式 */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium transition-all duration-200;
+}
+
+.btn:active {
+  @apply scale-[0.98];
+}
+
+.btn-primary {
+  @apply gradient-primary text-white shadow-lg shadow-primary-500/30;
+}
+
+.btn-primary:hover {
+  @apply shadow-xl shadow-primary-500/40;
+}
+
+.btn-secondary {
+  @apply bg-stone-100 text-stone-700;
+}
+
+.btn-secondary:hover {
+  @apply bg-stone-200;
+}
+
+.btn-outline {
+  @apply border-2 border-primary-500 text-primary-600 bg-transparent;
+}
+
+.btn-outline:hover {
+  @apply bg-primary-50;
+}
+
