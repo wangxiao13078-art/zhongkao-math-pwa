@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
@@ -22,7 +22,7 @@ const difficulties = [
   { value: 5, label: '困难' },
 ]
 
-export default function QuestionsPage() {
+function QuestionsContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   
@@ -229,6 +229,14 @@ export default function QuestionsPage() {
 
       <BottomNav />
     </div>
+  )
+}
+
+export default function QuestionsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-surface-50 flex items-center justify-center"><div className="text-stone-500">加载中...</div></div>}>
+      <QuestionsContent />
+    </Suspense>
   )
 }
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { 
@@ -48,7 +48,7 @@ const practiceTypes = [
   },
 ]
 
-export default function PracticePage() {
+function PracticeContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const { startPractice, mistakes, favorites } = useStore()
@@ -242,6 +242,14 @@ export default function PracticePage() {
 
       <BottomNav />
     </div>
+  )
+}
+
+export default function PracticePage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-surface-50 flex items-center justify-center"><div className="text-stone-500">加载中...</div></div>}>
+      <PracticeContent />
+    </Suspense>
   )
 }
 
