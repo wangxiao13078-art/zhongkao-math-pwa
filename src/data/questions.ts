@@ -57,7 +57,8 @@ export const questions: Question[] = [
     analysis: "由图形可得，-1 到点 A 的距离为：√(2² + 1²) = √5\n∴ 数轴上点 A 表示的实数是 √5 - 1",
     difficulty: 2,
     source: "中考数学万能解题法",
-    year: 2024
+    year: 2024,
+    image: "/images/questions/page_4.jpg"  // 数轴与直角三角形图
   },
   {
     id: 5,
@@ -310,7 +311,8 @@ export const questions: Question[] = [
     analysis: "作 OD⊥AC 于点 D，由垂径定理可知 AD = CD = AC/2 = 12\n在 Rt△OCD 中，OD = √(OC² - CD²) = √(169-144) = 5\n由圆周角、圆心角关系可知 ∠COD = ∠ABH\n∵ ∠AHB = ∠CDO = 90°\n∴ △ABH∽△COD\n∴ AB/AH = OC/OD = 13/5\n∴ AB = 18 × 13/5 = 234/5 = 46.8",
     difficulty: 4,
     source: "2016年成都中考",
-    year: 2016
+    year: 2016,
+    image: "/images/questions/page_22.jpg"  // 圆内接三角形图
   },
   {
     id: 24,
@@ -323,7 +325,8 @@ export const questions: Question[] = [
     analysis: "在AD上截取AE = AB = 3，连接CE，作CH⊥AD于点H\n可证△ABC≌△AEC，则BC = CE\n∵ 点C为弧BD的中点，∴ BC = CD\n∴ CD = CE，∴ DH = EH = (AD-AE)/2 = (5-3)/2 = 1\nAH = AE + EH = 3 + 1 = 4\n∵ ∠BAD = 60°，∴ ∠CAH = 30°\n∴ cos30° = AH/AC，AC = AH/cos30° = 4/(√3/2) = 8√3/3",
     difficulty: 4,
     source: "2015年常州中考",
-    year: 2015
+    year: 2015,
+    image: "/images/questions/page_22.jpg"  // 圆内接四边形图
   },
 
   // ========== 第五章 统计与概率 ==========
@@ -351,7 +354,8 @@ export const questions: Question[] = [
     analysis: "设两直角边分别是 2x, 3x\n则斜边（大正方形边长）= √[(2x)²+(3x)²] = √13·x\n小正方形边长 = 3x - 2x = x\nS大正方形 = 13x²\nS阴影 = S大正方形 - S小正方形 = 13x² - x² = 12x²\n∴ 概率 = 12x²/13x² = 12/13",
     difficulty: 3,
     source: "中考数学万能解题法",
-    year: 2024
+    year: 2024,
+    image: "/images/questions/page_37.jpg"  // 赵爽弦图
   },
   {
     id: 27,
@@ -379,7 +383,8 @@ export const questions: Question[] = [
     analysis: "S△OAB = (1/2) × OA × yB = (1/2) × 5 × yB = 15/2\n∴ yB = 3\n根据B点的不同位置，分析△OAB内部的整点分布情况\n当B在特定位置时，内部整点个数为4、5或6",
     difficulty: 4,
     source: "2019年成都中考",
-    year: 2019
+    year: 2019,
+    image: "/images/questions/page_44.jpg"  // 整点坐标系图
   },
   {
     id: 29,
@@ -392,7 +397,8 @@ export const questions: Question[] = [
     analysis: "根据皮克定理：S = N + L/2 - 1\n当 N = 5，L = 14 时：\nS = 5 + 14/2 - 1 = 5 + 7 - 1 = 11",
     difficulty: 3,
     source: "中考数学万能解题法",
-    year: 2024
+    year: 2024,
+    image: "/images/questions/page_45.jpg"  // 格点多边形图
   },
   {
     id: 30,
