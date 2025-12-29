@@ -2,16 +2,17 @@
 export interface Question {
   id: number
   original_num: string
-  type: '选择题' | '填空题' | '解答题'
+  type: string  // 选择题/填空题/解答题/综合题
   chapter: string
   content: string
   options: string[]
   answer: string
   analysis: string
-  difficulty: 1 | 2 | 3 | 4 | 5
+  difficulty: number  // 1-5
   source: string
   year: number
-  imageUrl?: string
+  image?: string  // 题目对应的图片路径
+  imageUrl?: string  // 兼容旧字段
 }
 
 // 练习记录

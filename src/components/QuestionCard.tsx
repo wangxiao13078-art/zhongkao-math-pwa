@@ -1,14 +1,17 @@
 'use client'
 
+import { useState } from 'react'
+import Image from 'next/image'
 import { Question } from '@/types'
 import MathText from './MathText'
-import { Heart, BookOpen, Star } from 'lucide-react'
+import { Heart, BookOpen, Star, ZoomIn, X } from 'lucide-react'
 import { useStore } from '@/stores/useStore'
 
 interface QuestionCardProps {
   question: Question
   showAnswer?: boolean
   showAnalysis?: boolean
+  showImage?: boolean  // 是否显示题目图片
   onClick?: () => void
   compact?: boolean
 }
@@ -20,13 +23,42 @@ export default function QuestionCard({
   question,
   showAnswer = false,
   showAnalysis = false,
+  showImage = true,
   onClick,
   compact = false,
 }: QuestionCardProps) {
   const { toggleFavorite, isFavorite } = useStore()
   const favorited = isFavorite(question.id)
+  const [imageZoomed, setImageZoomed] = useState(false)
+
+  // 获取图片路径
+  const imagePath = question.image || question.imageUrl
 
   return (
+    <>
+    {/* 图片放大弹窗 */}
+    {imageZoomed && imagePath && (
+      <div 
+        className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        onClick={() => setImageZoomed(false)}
+      >
+        <button 
+          className="absolute top-4 right-4 p-2 bg-white/20 rounded-full text-white hover:bg-white/30"
+          onClick={() => setImageZoomed(false)}
+        >
+          <X className="w-6 h-6" />
+        </button>
+        <div className="relative w-full h-full max-w-4xl max-h-[90vh]">
+          <Image
+            src={imagePath}
+            alt="题目图片"
+            fill
+            className="object-contain"
+            unoptimized
+          />
+        </div>
+      </div>
+    )}
     <div 
       className={`bg-white rounded-2xl shadow-card overflow-hidden card-hover ${onClick ? 'cursor-pointer' : ''}`}
       onClick={onClick}
@@ -69,6 +101,35 @@ export default function QuestionCard({
             />
           </div>
         </div>
+
+        {/* 题目图片 */}
+        {showImage && imagePath && !compact && (
+          <div 
+            className="mt-4 relative rounded-xl overflow-hidden border border-stone-200 cursor-pointer group"
+            onClick={(e) => {
+              e.stopPropagation()
+              setImageZoomed(true)
+            }}
+          >
+            <div className="relative w-full h-48 sm:h-64 bg-stone-100">
+              <Image
+                src={imagePath}
+                alt="题目图片"
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 rounded-full p-2">
+                <ZoomIn className="w-5 h-5 text-stone-600" />
+              </div>
+            </div>
+            <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+              点击查看大图
+            </div>
+          </div>
+        )}
 
         {/* 选项 */}
         {question.options.length > 0 && !compact && (
@@ -117,6 +178,7 @@ export default function QuestionCard({
         </div>
       )}
     </div>
+    </>
   )
 }
 

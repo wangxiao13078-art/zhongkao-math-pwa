@@ -196,9 +196,10 @@ export default function StatsPage() {
           </h3>
           
           <div className="flex items-end justify-around h-32">
-            {difficultyStats.map(({ difficulty, count, label }) => {
+            {difficultyStats.map(({ difficulty, count }) => {
               const maxCount = Math.max(...difficultyStats.map(d => d.count))
               const height = maxCount > 0 ? (count / maxCount) * 100 : 0
+              const labels = ['', '简单', '较易', '中等', '较难', '困难']
               
               return (
                 <div key={difficulty} className="flex flex-col items-center gap-2">
@@ -211,7 +212,7 @@ export default function StatsPage() {
                   />
                   <div className="text-center">
                     <div className="text-xs font-medium text-stone-600">{count}</div>
-                    <div className="text-xs text-stone-400">{label}</div>
+                    <div className="text-xs text-stone-400">{labels[difficulty] || `难度${difficulty}`}</div>
                   </div>
                 </div>
               )
