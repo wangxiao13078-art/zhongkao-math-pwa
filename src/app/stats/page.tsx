@@ -156,7 +156,7 @@ export default function StatsPage() {
           </h3>
           
           <div className="space-y-3">
-            {Object.entries(chapterStats).map(([chapter, count], index) => {
+            {chapterStats.map(({ chapter, count }, index) => {
               const percentage = Math.round((count / questions.length) * 100)
               return (
                 <div key={chapter}>
@@ -196,23 +196,22 @@ export default function StatsPage() {
           </h3>
           
           <div className="flex items-end justify-around h-32">
-            {[1, 2, 3, 4, 5].map((level) => {
-              const count = difficultyStats[level] || 0
-              const maxCount = Math.max(...Object.values(difficultyStats))
+            {difficultyStats.map(({ difficulty, count, label }) => {
+              const maxCount = Math.max(...difficultyStats.map(d => d.count))
               const height = maxCount > 0 ? (count / maxCount) * 100 : 0
               
               return (
-                <div key={level} className="flex flex-col items-center gap-2">
+                <div key={difficulty} className="flex flex-col items-center gap-2">
                   <motion.div
                     initial={{ height: 0 }}
                     animate={{ height: `${height}%` }}
-                    transition={{ duration: 0.5, delay: 0.4 + level * 0.1 }}
+                    transition={{ duration: 0.5, delay: 0.4 + difficulty * 0.1 }}
                     className="w-8 rounded-t-lg min-h-[4px]"
-                    style={{ backgroundColor: difficultyColors[level] }}
+                    style={{ backgroundColor: difficultyColors[difficulty] }}
                   />
                   <div className="text-center">
                     <div className="text-xs font-medium text-stone-600">{count}</div>
-                    <div className="text-xs text-stone-400">{difficultyLabels[level]}</div>
+                    <div className="text-xs text-stone-400">{label}</div>
                   </div>
                 </div>
               )

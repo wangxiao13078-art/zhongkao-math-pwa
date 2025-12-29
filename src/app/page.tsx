@@ -183,7 +183,7 @@ export default function HomePage() {
           </h2>
           
           <div className="bg-white rounded-2xl shadow-card p-4 space-y-3">
-            {Object.entries(chapterStats).slice(0, 5).map(([chapter, count]) => {
+            {chapterStats.slice(0, 5).map(({ chapter, count }) => {
               const percentage = Math.round((count / questions.length) * 100)
               return (
                 <Link
