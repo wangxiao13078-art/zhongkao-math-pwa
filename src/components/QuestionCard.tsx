@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import { Question } from '@/types'
 import MathText from './MathText'
 import { Heart, BookOpen, Star, ZoomIn, X } from 'lucide-react'
@@ -39,22 +38,21 @@ export default function QuestionCard({
     {/* 图片放大弹窗 */}
     {imageZoomed && imagePath && (
       <div 
-        className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 overflow-auto"
         onClick={() => setImageZoomed(false)}
       >
         <button 
-          className="absolute top-4 right-4 p-2 bg-white/20 rounded-full text-white hover:bg-white/30"
+          className="fixed top-4 right-4 p-3 bg-white/20 rounded-full text-white hover:bg-white/30 z-10"
           onClick={() => setImageZoomed(false)}
         >
           <X className="w-6 h-6" />
         </button>
-        <div className="relative w-full h-full max-w-4xl max-h-[90vh]">
-          <Image
+        <div className="w-full max-w-4xl" onClick={(e) => e.stopPropagation()}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={imagePath}
             alt="题目图片"
-            fill
-            className="object-contain"
-            unoptimized
+            className="w-full h-auto rounded-lg shadow-2xl"
           />
         </div>
       </div>
@@ -90,43 +88,46 @@ export default function QuestionCard({
 
       {/* 题目内容 */}
       <div className="p-4">
-        <div className="flex gap-2">
-          <span className="flex-shrink-0 w-6 h-6 rounded-full gradient-primary text-white text-xs flex items-center justify-center font-medium">
-            {question.original_num}
-          </span>
-          <div className="flex-1 min-w-0">
-            <MathText 
-              content={compact ? question.content.slice(0, 100) + (question.content.length > 100 ? '...' : '') : question.content} 
-              className="text-stone-700"
-            />
-          </div>
-        </div>
-
-        {/* 题目图片 */}
+        {/* 图片优先显示（主要内容） */}
         {showImage && imagePath && !compact && (
           <div 
-            className="mt-4 relative rounded-xl overflow-hidden border border-stone-200 cursor-pointer group"
+            className="relative rounded-xl overflow-hidden border-2 border-stone-200 cursor-pointer group shadow-sm"
             onClick={(e) => {
               e.stopPropagation()
               setImageZoomed(true)
             }}
           >
-            <div className="relative w-full h-48 sm:h-64 bg-stone-100">
-              <Image
+            <div className="relative w-full min-h-[200px] sm:min-h-[300px] bg-white">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={imagePath}
                 alt="题目图片"
-                fill
-                className="object-contain"
-                unoptimized
+                className="w-full h-auto"
+                loading="lazy"
               />
             </div>
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 rounded-full p-2">
-                <ZoomIn className="w-5 h-5 text-stone-600" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center pointer-events-none">
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/95 rounded-full p-3 shadow-lg">
+                <ZoomIn className="w-6 h-6 text-primary-500" />
               </div>
             </div>
-            <div className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-              点击查看大图
+            <div className="absolute bottom-2 right-2 bg-primary-500 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow">
+              📷 点击放大
+            </div>
+          </div>
+        )}
+        
+        {/* 如果没有图片，显示OCR文本 */}
+        {(!imagePath || compact) && (
+          <div className="flex gap-2">
+            <span className="flex-shrink-0 w-6 h-6 rounded-full gradient-primary text-white text-xs flex items-center justify-center font-medium">
+              {question.original_num}
+            </span>
+            <div className="flex-1 min-w-0">
+              <MathText 
+                content={compact ? question.content.slice(0, 100) + (question.content.length > 100 ? '...' : '') : question.content} 
+                className="text-stone-700"
+              />
             </div>
           </div>
         )}

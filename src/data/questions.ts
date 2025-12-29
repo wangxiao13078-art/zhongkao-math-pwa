@@ -16,7 +16,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_1.jpg"
+    image: "/images/questions/page_1.jpg"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_2.jpg"
+    image: "/images/questions/page_2.jpg"
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_3.jpg"
+    image: "/images/questions/page_3.jpg"
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_4.jpg"
+    image: "/images/questions/page_4.jpg"
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_5.jpg"
+    image: "/images/questions/page_5.jpg"
   },
   {
     id: 6,
@@ -86,7 +86,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_6.jpg"
+    image: "/images/questions/page_6.jpg"
   },
   {
     id: 7,
@@ -100,7 +100,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_7.jpg"
+    image: "/images/questions/page_7.jpg"
   },
   {
     id: 8,
@@ -114,7 +114,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_8.jpg"
+    image: "/images/questions/page_8.jpg"
   },
   {
     id: 9,
@@ -128,7 +128,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_8.jpg"
+    image: "/images/questions/page_8.jpg"
   },
   {
     id: 10,
@@ -142,7 +142,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_8.jpg"
+    image: "/images/questions/page_8.jpg"
   },
   {
     id: 11,
@@ -156,7 +156,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_8.jpg"
+    image: "/images/questions/page_8.jpg"
   },
   {
     id: 12,
@@ -170,7 +170,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_9.jpg"
+    image: "/images/questions/page_9.jpg"
   },
   {
     id: 13,
@@ -184,7 +184,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_9.jpg"
+    image: "/images/questions/page_9.jpg"
   },
   {
     id: 14,
@@ -198,7 +198,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_10.jpg"
+    image: "/images/questions/page_10.jpg"
   },
   {
     id: 15,
@@ -212,7 +212,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_10.jpg"
+    image: "/images/questions/page_10.jpg"
   },
   {
     id: 16,
@@ -226,7 +226,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_11.jpg"
+    image: "/images/questions/page_11.jpg"
   },
   {
     id: 17,
@@ -240,7 +240,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_12.jpg"
+    image: "/images/questions/page_12.jpg"
   },
   {
     id: 18,
@@ -254,7 +254,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_13.jpg"
+    image: "/images/questions/page_13.jpg"
   },
   {
     id: 19,
@@ -268,7 +268,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_14.jpg"
+    image: "/images/questions/page_14.jpg"
   },
   {
     id: 20,
@@ -282,7 +282,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_14.jpg"
+    image: "/images/questions/page_14.jpg"
   },
   {
     id: 21,
@@ -296,7 +296,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_14.jpg"
+    image: "/images/questions/page_14.jpg"
   },
   {
     id: 22,
@@ -310,7 +310,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_14.jpg"
+    image: "/images/questions/page_14.jpg"
   },
   {
     id: 23,
@@ -324,7 +324,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_14.jpg"
+    image: "/images/questions/page_14.jpg"
   },
   {
     id: 24,
@@ -338,7 +338,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_15.jpg"
+    image: "/images/questions/page_15.jpg"
   },
   {
     id: 25,
@@ -352,7 +352,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_16.jpg"
+    image: "/images/questions/page_16.jpg"
   },
   {
     id: 26,
@@ -366,7 +366,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_16.jpg"
+    image: "/images/questions/page_16.jpg"
   },
   {
     id: 27,
@@ -380,7 +380,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_16.jpg"
+    image: "/images/questions/page_16.jpg"
   },
   {
     id: 28,
@@ -394,7 +394,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_16.jpg"
+    image: "/images/questions/page_16.jpg"
   },
   {
     id: 29,
@@ -408,7 +408,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_16.jpg"
+    image: "/images/questions/page_16.jpg"
   },
   {
     id: 30,
@@ -422,7 +422,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_16.jpg"
+    image: "/images/questions/page_16.jpg"
   },
   {
     id: 31,
@@ -436,7 +436,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_16.jpg"
+    image: "/images/questions/page_16.jpg"
   },
   {
     id: 32,
@@ -450,7 +450,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_17.jpg"
+    image: "/images/questions/page_17.jpg"
   },
   {
     id: 33,
@@ -464,7 +464,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_17.jpg"
+    image: "/images/questions/page_17.jpg"
   },
   {
     id: 34,
@@ -478,7 +478,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_17.jpg"
+    image: "/images/questions/page_17.jpg"
   },
   {
     id: 35,
@@ -492,7 +492,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_19.jpg"
+    image: "/images/questions/page_19.jpg"
   },
   {
     id: 36,
@@ -506,7 +506,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_20.jpg"
+    image: "/images/questions/page_20.jpg"
   },
   {
     id: 37,
@@ -520,7 +520,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_21.jpg"
+    image: "/images/questions/page_21.jpg"
   },
   {
     id: 38,
@@ -534,7 +534,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_22.jpg"
+    image: "/images/questions/page_22.jpg"
   },
   {
     id: 39,
@@ -548,7 +548,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_23.jpg"
+    image: "/images/questions/page_23.jpg"
   },
   {
     id: 40,
@@ -562,7 +562,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_25.jpg"
+    image: "/images/questions/page_25.jpg"
   },
   {
     id: 41,
@@ -576,7 +576,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_27.jpg"
+    image: "/images/questions/page_27.jpg"
   },
   {
     id: 42,
@@ -590,7 +590,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_28.jpg"
+    image: "/images/questions/page_28.jpg"
   },
   {
     id: 43,
@@ -604,7 +604,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_28.jpg"
+    image: "/images/questions/page_28.jpg"
   },
   {
     id: 44,
@@ -618,7 +618,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_28.jpg"
+    image: "/images/questions/page_28.jpg"
   },
   {
     id: 45,
@@ -632,7 +632,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_28.jpg"
+    image: "/images/questions/page_28.jpg"
   },
   {
     id: 46,
@@ -646,7 +646,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_28.jpg"
+    image: "/images/questions/page_28.jpg"
   },
   {
     id: 47,
@@ -660,7 +660,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_29.jpg"
+    image: "/images/questions/page_29.jpg"
   },
   {
     id: 48,
@@ -674,7 +674,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_29.jpg"
+    image: "/images/questions/page_29.jpg"
   },
   {
     id: 49,
@@ -688,7 +688,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_29.jpg"
+    image: "/images/questions/page_29.jpg"
   },
   {
     id: 50,
@@ -702,7 +702,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_29.jpg"
+    image: "/images/questions/page_29.jpg"
   },
   {
     id: 51,
@@ -716,7 +716,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_31.jpg"
+    image: "/images/questions/page_31.jpg"
   },
   {
     id: 52,
@@ -730,7 +730,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_32.jpg"
+    image: "/images/questions/page_32.jpg"
   },
   {
     id: 53,
@@ -744,7 +744,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 54,
@@ -758,7 +758,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 55,
@@ -772,7 +772,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 56,
@@ -786,7 +786,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 57,
@@ -800,7 +800,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 58,
@@ -814,7 +814,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 59,
@@ -828,7 +828,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 60,
@@ -842,7 +842,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 61,
@@ -856,7 +856,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 62,
@@ -870,7 +870,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_33.jpg"
+    image: "/images/questions/page_33.jpg"
   },
   {
     id: 63,
@@ -884,7 +884,7 @@ export const questions: Question[] = [
     difficulty: 5,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_35.jpg"
+    image: "/images/questions/page_35.jpg"
   },
   {
     id: 64,
@@ -898,7 +898,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_35.jpg"
+    image: "/images/questions/page_35.jpg"
   },
   {
     id: 65,
@@ -912,7 +912,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_36.jpg"
+    image: "/images/questions/page_36.jpg"
   },
   {
     id: 66,
@@ -926,7 +926,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_37.jpg"
+    image: "/images/questions/page_37.jpg"
   },
   {
     id: 67,
@@ -940,7 +940,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_38.jpg"
+    image: "/images/questions/page_38.jpg"
   },
   {
     id: 68,
@@ -954,7 +954,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_39.jpg"
+    image: "/images/questions/page_39.jpg"
   },
   {
     id: 69,
@@ -968,7 +968,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_40.jpg"
+    image: "/images/questions/page_40.jpg"
   },
   {
     id: 70,
@@ -982,7 +982,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_40.jpg"
+    image: "/images/questions/page_40.jpg"
   },
   {
     id: 71,
@@ -996,7 +996,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_41.jpg"
+    image: "/images/questions/page_41.jpg"
   },
   {
     id: 72,
@@ -1010,7 +1010,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_41.jpg"
+    image: "/images/questions/page_41.jpg"
   },
   {
     id: 73,
@@ -1024,7 +1024,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_42.jpg"
+    image: "/images/questions/page_42.jpg"
   },
   {
     id: 74,
@@ -1038,7 +1038,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_42.jpg"
+    image: "/images/questions/page_42.jpg"
   },
   {
     id: 75,
@@ -1052,7 +1052,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_43.jpg"
+    image: "/images/questions/page_43.jpg"
   },
   {
     id: 76,
@@ -1066,7 +1066,7 @@ export const questions: Question[] = [
     difficulty: 2,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_43.jpg"
+    image: "/images/questions/page_43.jpg"
   },
   {
     id: 77,
@@ -1080,7 +1080,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_44.jpg"
+    image: "/images/questions/page_44.jpg"
   },
   {
     id: 78,
@@ -1094,7 +1094,7 @@ export const questions: Question[] = [
     difficulty: 4,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_45.jpg"
+    image: "/images/questions/page_45.jpg"
   },
   {
     id: 79,
@@ -1108,7 +1108,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_46.jpg"
+    image: "/images/questions/page_46.jpg"
   },
   {
     id: 80,
@@ -1122,7 +1122,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_47.jpg"
+    image: "/images/questions/page_47.jpg"
   },
   {
     id: 81,
@@ -1136,7 +1136,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_48.jpg"
+    image: "/images/questions/page_48.jpg"
   },
   {
     id: 82,
@@ -1150,7 +1150,7 @@ export const questions: Question[] = [
     difficulty: 3,
     source: "中考数学万能解题法",
     year: 2024,
-    image: "/images/questions/扫描全能王 2025-12-11 12.23_49.jpg"
+    image: "/images/questions/page_49.jpg"
   },
 ]
 
