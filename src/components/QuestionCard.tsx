@@ -88,8 +88,55 @@ export default function QuestionCard({
 
       {/* 题目内容 */}
       <div className="p-4">
-        {/* 图片优先显示（主要内容） */}
-        {showImage && imagePath && !compact && (
+        {/* 紧凑模式 - 显示图片缩略图 */}
+        {compact && imagePath && (
+          <div className="flex gap-3 items-start">
+            {/* 缩略图 */}
+            <div className="flex-shrink-0 w-24 h-24 rounded-lg overflow-hidden border border-stone-200 bg-white">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={imagePath}
+                alt="题目缩略图"
+                className="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+            {/* 标题信息 */}
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full gradient-primary text-white text-xs flex items-center justify-center font-medium">
+                  {question.id}
+                </span>
+                <span className="text-sm font-medium text-stone-700">{question.chapter}</span>
+              </div>
+              <p className="text-xs text-stone-500 line-clamp-2">
+                {question.source} · 第{question.original_num?.replace(/[^0-9]/g, '') || question.id}页
+              </p>
+              <div className="mt-2 flex items-center gap-1 text-primary-500 text-xs font-medium">
+                <ZoomIn className="w-3 h-3" />
+                <span>点击查看完整题目</span>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 紧凑模式 - 无图片时显示文本 */}
+        {compact && !imagePath && (
+          <div className="flex gap-2">
+            <span className="flex-shrink-0 w-6 h-6 rounded-full gradient-primary text-white text-xs flex items-center justify-center font-medium">
+              {question.id}
+            </span>
+            <div className="flex-1 min-w-0">
+              <MathText 
+                content={question.content.slice(0, 100) + (question.content.length > 100 ? '...' : '')} 
+                className="text-stone-700"
+              />
+            </div>
+          </div>
+        )}
+
+        {/* 详情模式 - 图片优先显示（主要内容） */}
+        {!compact && showImage && imagePath && (
           <div 
             className="relative rounded-xl overflow-hidden border-2 border-stone-200 cursor-pointer group shadow-sm"
             onClick={(e) => {
@@ -117,15 +164,15 @@ export default function QuestionCard({
           </div>
         )}
         
-        {/* 如果没有图片，显示OCR文本 */}
-        {(!imagePath || compact) && (
+        {/* 详情模式 - 如果没有图片，显示OCR文本 */}
+        {!compact && !imagePath && (
           <div className="flex gap-2">
             <span className="flex-shrink-0 w-6 h-6 rounded-full gradient-primary text-white text-xs flex items-center justify-center font-medium">
               {question.original_num}
             </span>
             <div className="flex-1 min-w-0">
               <MathText 
-                content={compact ? question.content.slice(0, 100) + (question.content.length > 100 ? '...' : '') : question.content} 
+                content={question.content} 
                 className="text-stone-700"
               />
             </div>
