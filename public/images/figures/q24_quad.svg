@@ -1,0 +1,44 @@
+<svg width="240" height="220" viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="240" height="220" fill="white"/>
+  
+  <!-- 圆O -->
+  <circle cx="120" cy="110" r="85" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- 圆心O -->
+  <circle cx="120" cy="110" r="3" fill="black"/>
+  <text x="125" y="105" font-size="14" font-weight="bold">O</text>
+  
+  <!-- 四边形ABCD的顶点 -->
+  <!-- A在左上 -->
+  <circle cx="50" cy="70" r="4" fill="#E67E22"/>
+  <text x="35" y="65" font-size="14" font-weight="bold" fill="#E67E22">A</text>
+  
+  <!-- B在右上 -->
+  <circle cx="180" cy="50" r="4" fill="#E67E22"/>
+  <text x="185" y="45" font-size="14" font-weight="bold" fill="#E67E22">B</text>
+  
+  <!-- C在弧BD中点（下方） -->
+  <circle cx="170" cy="180" r="4" fill="#3498DB"/>
+  <text x="175" y="195" font-size="14" font-weight="bold" fill="#3498DB">C</text>
+  
+  <!-- D在左下 -->
+  <circle cx="40" cy="130" r="4" fill="#E67E22"/>
+  <text x="20" y="135" font-size="14" font-weight="bold" fill="#E67E22">D</text>
+  
+  <!-- 四边形ABCD -->
+  <polygon points="50,70 180,50 170,180 40,130" fill="rgba(230,126,34,0.15)" stroke="#E67E22" stroke-width="2"/>
+  
+  <!-- AC对角线 -->
+  <line x1="50" y1="70" x2="170" y2="180" stroke="#9B59B6" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="100" y="140" font-size="12" fill="#9B59B6">AC=?</text>
+  
+  <!-- 标注 -->
+  <text x="100" y="50" font-size="11" fill="#666">AB=3</text>
+  <text x="25" y="100" font-size="11" fill="#666">AD=5</text>
+  
+  <!-- 角度标记 -->
+  <path d="M 60,70 A 15,15 0 0 1 50,82" fill="none" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="65" y="90" font-size="10" fill="#27AE60">60°</text>
+</svg>
+

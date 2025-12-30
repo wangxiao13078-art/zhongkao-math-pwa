@@ -1,0 +1,46 @@
+<svg width="240" height="220" viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="240" height="220" fill="white"/>
+  
+  <!-- 圆O -->
+  <circle cx="120" cy="100" r="80" fill="none" stroke="black" stroke-width="2"/>
+  
+  <!-- 圆心O -->
+  <circle cx="120" cy="100" r="3" fill="black"/>
+  <text x="125" y="95" font-size="14" font-weight="bold">O</text>
+  
+  <!-- 三角形ABC的顶点 -->
+  <!-- A在圆上方 -->
+  <circle cx="120" cy="20" r="4" fill="#E67E22"/>
+  <text x="115" y="15" font-size="14" font-weight="bold" fill="#E67E22">A</text>
+  
+  <!-- B在左下 -->
+  <circle cx="55" cy="145" r="4" fill="#E67E22"/>
+  <text x="40" y="155" font-size="14" font-weight="bold" fill="#E67E22">B</text>
+  
+  <!-- C在右下 -->
+  <circle cx="185" cy="145" r="4" fill="#E67E22"/>
+  <text x="190" y="155" font-size="14" font-weight="bold" fill="#E67E22">C</text>
+  
+  <!-- 三角形ABC -->
+  <polygon points="120,20 55,145 185,145" fill="rgba(230,126,34,0.15)" stroke="#E67E22" stroke-width="2"/>
+  
+  <!-- BC边 -->
+  <line x1="55" y1="145" x2="185" y2="145" stroke="#E67E22" stroke-width="2"/>
+  
+  <!-- H点（AH垂直BC的垂足） -->
+  <circle cx="120" cy="145" r="3" fill="#3498DB"/>
+  <text x="115" y="165" font-size="14" font-weight="bold" fill="#3498DB">H</text>
+  
+  <!-- AH高 -->
+  <line x1="120" y1="20" x2="120" y2="145" stroke="#3498DB" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- 直角标记 -->
+  <polyline points="112,145 112,137 120,137" fill="none" stroke="#3498DB" stroke-width="1.5"/>
+  
+  <!-- 标注 -->
+  <text x="170" y="90" font-size="12" fill="#666">AC=24</text>
+  <text x="130" y="85" font-size="12" fill="#666">AH=18</text>
+  <text x="130" y="115" font-size="12" fill="#666">OC=13</text>
+</svg>
+
